@@ -3,20 +3,20 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".dispatchevent.MainActivity">
 
-    <com.example.dispatcheventtest.ALinearLayout
+    <com.example.dispatcheventtest.dispatchevent.ALinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-        <com.example.dispatcheventtest.BLinearLayout
+        <com.example.dispatcheventtest.dispatchevent.BLinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent">
 
-            <com.example.dispatcheventtest.CLinearLayout
+            <com.example.dispatcheventtest.dispatchevent.CLinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent" />
-        </com.example.dispatcheventtest.BLinearLayout>
-    </com.example.dispatcheventtest.ALinearLayout>
+        </com.example.dispatcheventtest.dispatchevent.BLinearLayout>
+    </com.example.dispatcheventtest.dispatchevent.ALinearLayout>
 
 </LinearLayout>

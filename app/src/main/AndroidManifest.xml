@@ -19,7 +19,7 @@
         <activity android:name=".sliding.conflict.outer.ConflictOuterActivity">
 
         </activity>
-        <activity android:name=".MainActivity" />
+        <activity android:name=".dispatchevent.MainActivity" />
     </application>
 
 </manifest>

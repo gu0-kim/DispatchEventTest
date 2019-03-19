@@ -1,4 +1,4 @@
-package com.example.dispatcheventtest;
+package com.example.dispatcheventtest.dispatchevent;
 
 import android.content.Context;
 import android.util.AttributeSet;
@@ -6,14 +6,14 @@ import android.util.Log;
 import android.view.MotionEvent;
 import android.widget.LinearLayout;
 
-public class BLinearLayout extends LinearLayout {
-  private static final String TAG = "B linearlayout";
+public class ALinearLayout extends LinearLayout {
+  private static final String TAG = "A linearlayout";
 
-  public BLinearLayout(Context context) {
+  public ALinearLayout(Context context) {
     super(context);
   }
 
-  public BLinearLayout(Context context, AttributeSet attrs) {
+  public ALinearLayout(Context context, AttributeSet attrs) {
     super(context, attrs);
   }
 
@@ -25,13 +25,13 @@ public class BLinearLayout extends LinearLayout {
 
   @Override
   public boolean onInterceptTouchEvent(MotionEvent ev) {
-    Log.e(TAG, "onInterceptTouchEvent: " + ev.getAction());
+    Log.e(TAG, "onInterceptTouchEvent " + ev.getAction());
     return false;
   }
 
   @Override
   public boolean onTouchEvent(MotionEvent event) {
     Log.e(TAG, "onTouchEvent: " + event.getAction());
-    return false;
+    return true;
   }
 }
